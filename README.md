@@ -21,7 +21,7 @@ This task involved using Splunk SIEM for monitoring logs and detecting security 
 ## Files Included
 - incident_response_report_task2.pdf (final report with screenshots)
 - /screenshots/ folder (raw analysis images)
-- Sample logs/ folder
+- Sample logs/ folder (Since no sample logs were provided by the internship mentors, simulated log files were used for Splunk ingestion and analysis.)
 
 ## Conclusion
 This task demonstrates basic SOC analyst activities: log ingestion, monitoring, threat identification, and reporting through Splunk.
