@@ -1,43 +1,31 @@
-# FUTURE_CS_02
+# Incident Response Report - Task 2
 
-**Incident Response Report – Task 2**
+## Overview
+This task involved using Splunk SIEM for monitoring logs and detecting security incidents. Sample log files were ingested, and suspicious activities were identified.
 
-**Overview**
+## Steps Performed
+- Installed Splunk Enterprise and logged into web interface
+- Uploaded CSV log files: network_traffic.csv, firewall_logs.csv, malware_alerts.csv, failed_logins.csv
+- Executed SPL queries to detect anomalies
+- Identified suspicious SSH traffic, blocked firewall events, malware infection, and failed login attempts
+- Compiled findings into a detailed Incident Response Report
 
-This task involved using Splunk SIEM for monitoring logs and detecting potential security incidents. Sample log files were uploaded in Splunk, suspicious activities were analyzed, and a final incident response report was generated.
+## Findings Summary
+| Category | Description |
+|----------|-------------|
+| Network Traffic | SSH attempt from IP 10.0.0.4 to port 22 |
+| Firewall Logs | Blocked connections: 203.0.113.10 (3389), 198.51.100.5 (22) |
+| Malware Alert | PC1 infected with Trojan.Generic (High severity) |
+| Failed Logins | User john had 2 failed logins |
 
-**Steps Performed**
+## Files Included
+- incident_response_report_task2.pdf (final report with screenshots)
+- /screenshots/ folder (raw analysis images)
+- Sample logs/ folder
 
-• Installed and logged into Splunk Enterprise
+## Conclusion
+This task demonstrates basic SOC analyst activities: log ingestion, monitoring, threat identification, and reporting through Splunk.
 
-• Uploaded CSV log files: network_traffic.csv, firewall_logs.csv, malware_alerts.csv, and failed_logins.csv
+## Author
+**Mayur Sandipan Jadhav**
 
-• Ran SPL queries to identify anomalies in network traffic, firewall events, malware alerts, and login attempts
-
-• Noted all suspicious findings and documented them in a report
-
-• Exported the report in PDF and DOCX formats and attached evidence screenshots
-
-**Findings Summary**
-
-• Network Traffic: SSH attempt from IP 10.0.0.4 to port 22
-
-• Firewall Logs: Blocked connections from 203.0.113.10 on port 3389 and 198.51.100.5 on port 22
-
-• Malware Alert: PC1 infected with Trojan.Generic (High severity)
-
-• Failed Logins: User 'john' had 2 failed login attempts (minor suspicious activity)
-
-**Files Included**
-
-• incident_response_report_task2.pdf (final report with screenshots)
-
-• A folder named "screenshots" containing raw screenshot images
-
-**Conclusion**
-
-This task successfully simulated SOC analyst work by identifying multiple security alerts using Splunk SIEM and creating a professional incident response report based on the findings.
-
-**Author**
-
-Mayur Sandipan Jadhav
